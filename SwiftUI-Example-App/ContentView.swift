@@ -9,8 +9,19 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView {
+            VStack {
+                Button(action: {}) {
+                    Image(systemName: "airplane")
+                }
+                .font(.largeTitle)
+                .foregroundColor(.white)
+                .frame(width: 80, height: 80)
+                .background(Color.gray)
+                .clipShape(RoundedRectangle(cornerRadius: 10))
+            }
+            .navigationTitle(Text("Memorize me"))
+        }
     }
 }
 
