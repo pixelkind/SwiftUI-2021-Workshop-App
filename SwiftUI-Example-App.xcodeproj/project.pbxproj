@@ -13,6 +13,7 @@
 		6FDD2ECF2726E2330012C3CF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FDD2ECE2726E2330012C3CF /* Preview Assets.xcassets */; };
 		6FE0272C272A7A6E003232E6 /* MemoryButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE0272B272A7A6E003232E6 /* MemoryButtonStyle.swift */; };
 		6FE0272E272A7C38003232E6 /* MemoryCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE0272D272A7C38003232E6 /* MemoryCardView.swift */; };
+		6FE02730272A8584003232E6 /* NotificationBadgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE0272F272A8584003232E6 /* NotificationBadgeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		6FDD2ECE2726E2330012C3CF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6FE0272B272A7A6E003232E6 /* MemoryButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryButtonStyle.swift; sourceTree = "<group>"; };
 		6FE0272D272A7C38003232E6 /* MemoryCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryCardView.swift; sourceTree = "<group>"; };
+		6FE0272F272A8584003232E6 /* NotificationBadgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationBadgeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 				6FDD2EC72726E2320012C3CF /* SwiftUI_Example_AppApp.swift */,
 				6FDD2EC92726E2320012C3CF /* ContentView.swift */,
 				6FE0272D272A7C38003232E6 /* MemoryCardView.swift */,
+				6FE0272F272A8584003232E6 /* NotificationBadgeView.swift */,
 				6FE0272B272A7A6E003232E6 /* MemoryButtonStyle.swift */,
 				6FDD2ECB2726E2330012C3CF /* Assets.xcassets */,
 				6FDD2ECD2726E2330012C3CF /* Preview Content */,
@@ -147,6 +150,7 @@
 				6FE0272E272A7C38003232E6 /* MemoryCardView.swift in Sources */,
 				6FDD2EC82726E2320012C3CF /* SwiftUI_Example_AppApp.swift in Sources */,
 				6FE0272C272A7A6E003232E6 /* MemoryButtonStyle.swift in Sources */,
+				6FE02730272A8584003232E6 /* NotificationBadgeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
