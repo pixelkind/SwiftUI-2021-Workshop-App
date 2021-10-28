@@ -22,11 +22,7 @@ struct ContentView: View {
                             Image(systemName: cardIsOpen[index] ? "airplane" : "giftcard")
 
                         }
-                        .font(.largeTitle)
-                        .foregroundColor(.white)
-                        .frame(width: 80, height: 80)
-                        .background(Color.gray)
-                        .clipShape(RoundedRectangle(cornerRadius: 10))
+                        .buttonStyle(MemoryButtonStyle())
                     }
                 }
             }
