@@ -16,13 +16,7 @@ struct ContentView: View {
                 LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible()), GridItem(.flexible()), GridItem(.flexible())], spacing: 10) {
                     
                     ForEach(0..<16) { index in
-                        Button(action: {
-                            cardIsOpen[index].toggle()
-                        }) {
-                            Image(systemName: cardIsOpen[index] ? "airplane" : "giftcard")
-
-                        }
-                        .buttonStyle(MemoryButtonStyle())
+                        MemoryCardView(cardIsOpen: $cardIsOpen[index])
                     }
                 }
             }
