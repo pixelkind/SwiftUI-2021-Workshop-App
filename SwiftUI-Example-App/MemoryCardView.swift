@@ -8,13 +8,14 @@
 import SwiftUI
 
 struct MemoryCardView: View {
-    @Binding var cardIsOpen: Bool
+    
+    @ObservedObject var card: Card
     
     var body: some View {
         Button(action: {
-            cardIsOpen.toggle()
+            card.isOpen.toggle()
         }) {
-            Image(systemName: cardIsOpen ? "airplane" : "giftcard")
+            Image(systemName: card.isOpen ? card.image : "giftcard")
 
         }
         .buttonStyle(MemoryButtonStyle())
@@ -24,8 +25,7 @@ struct MemoryCardView: View {
 struct MemoryCardView_Previews: PreviewProvider {
     static var previews: some View {
         VStack {
-            MemoryCardView(cardIsOpen: .constant(true))
-            MemoryCardView(cardIsOpen: .constant(false))
+            MemoryCardView(card: Card(image: "airplane"))
         }
     }
 }

@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject var game = GameModel()
+    
     @State private var cardIsOpen = Array(repeating: false, count: 16)
     
     var body: some View {
@@ -15,8 +17,8 @@ struct ContentView: View {
             VStack {
                 LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible()), GridItem(.flexible()), GridItem(.flexible())], spacing: 10) {
                     
-                    ForEach(0..<16) { index in
-                        MemoryCardView(cardIsOpen: $cardIsOpen[index])
+                    ForEach(game.cards, id: \.id) { card in
+                        MemoryCardView(card: card)
                     }
                 }
             }
